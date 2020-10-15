@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/spencer_stinson1/Documents/GitHub/Lab08/disp.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module disp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/spencer_stinson1/Documents/GitHub/Lab08/basys3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module basys3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/spencer_stinson1/Documents/GitHub/Lab08/Lab_08/Lab_08.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

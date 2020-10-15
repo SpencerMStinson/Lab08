@@ -1,0 +1,8 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/XilinxVivado/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 7ac3066a35864bce8dc665589f3e2b5a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot basys3_behav xil_defaultlib.basys3 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2063] Module <sseg4_manual> not found while processing module instance <sseg4_manual_inst> [C:/Users/spencer_stinson1/Documents/GitHub/Lab08/basys3.sv:31]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

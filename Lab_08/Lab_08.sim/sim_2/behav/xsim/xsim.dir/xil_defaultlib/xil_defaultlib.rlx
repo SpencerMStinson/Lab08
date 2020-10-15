@@ -1,0 +1,11 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/Users/spencer_stinson1/Documents/GitHub/Lab08/Lab_08/Lab_08.sim/sim_2/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+C:/Users/spencer_stinson1/Documents/GitHub/Lab08/Lab_08/Lab_08.srcs/sim_2/new/an_decoder_testbench.sv,1602786414,systemVerilog,,,,an_decoder_testbench,,,,,,,,
+C:/Users/spencer_stinson1/Documents/GitHub/Lab08/Lab_08/Lab_08.srcs/sim_2/new/mux2_testbench.sv,1602781316,systemVerilog,,,,mux2_testbench,,,,,,,,
+C:/Users/spencer_stinson1/Documents/GitHub/Lab08/Lab_08/Lab_08.srcs/sim_2/new/mux4_testbench.sv,1602783369,systemVerilog,,,,mux4_testbench,,,,,,,,
+C:/Users/spencer_stinson1/Documents/GitHub/Lab08/Lab_08/Lab_08.srcs/sources_1/new/an_decoder.sv,1602784299,systemVerilog,,C:/Users/spencer_stinson1/Documents/GitHub/Lab08/Lab_08/Lab_08.srcs/sim_2/new/an_decoder_testbench.sv,,an_decoder,,,,,,,,
+C:/Users/spencer_stinson1/Documents/GitHub/Lab08/Lab_08/Lab_08.srcs/sources_1/new/mux2.sv,1602780877,systemVerilog,,C:/Users/spencer_stinson1/Documents/GitHub/Lab08/Lab_08/Lab_08.srcs/sim_2/new/mux2_testbench.sv,,mux2,,,,,,,,
+C:/Users/spencer_stinson1/Documents/GitHub/Lab08/Lab_08/Lab_08.srcs/sources_1/new/mux4.sv,1602782247,systemVerilog,,C:/Users/spencer_stinson1/Documents/GitHub/Lab08/Lab_08/Lab_08.srcs/sim_2/new/mux4_testbench.sv,,mux4,,,,,,,,
