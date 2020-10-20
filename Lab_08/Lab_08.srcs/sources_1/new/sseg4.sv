@@ -33,10 +33,12 @@ module sseg4(
     wire [3:0] m2out;
     wire [3:0] m4out;
     wire [6:0] out0; 
-    
+    wire [3:0] an_d_out;
+   
+    assign sel = sign & an_d_out[3]; 
+   
     dd11b bcd11(
-        .in(data[10:0]),
-        .out(in0)
+        .B(
     );
     
     mux2 #(.BITS(16)) m2_seg (
@@ -47,10 +49,10 @@ module sseg4(
     );
     
     mux4 m4_seg (
-        .in1(),
-        .in2(),
-        .in3(),
-        .in4(),
+        .in1(m2out[12:15]),
+        .in2(m2out[8:11]),
+        .in3(m2out[4:7]),
+        .in4(m2out[0:3]),
         .sel(digit_sel),
         .out(m4out)
     );
@@ -67,12 +69,11 @@ module sseg4(
         .out(seg)
     );
     
+    an_decoder ad1 (
+     .in(digit_sel),
+     .out(an_d_out)
+    );
     
-    
-    
-    
-    
-    
-    
+    assign dp = 1;
     
 endmodule
