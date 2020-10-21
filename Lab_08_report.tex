@@ -60,7 +60,7 @@
 %=========== Body  ====================================
 \begin{document}
 
-\title{ELC 2137 Lab \06: MUX and 7-segment Decoder}
+\title{ELC 2137 Lab \08: 4-digit Display}
 \author{Spencer Stinson}
 
 \maketitle
@@ -68,22 +68,82 @@
 
 \section*{Summary}
 
-Type the summary of your experiment and results here.  
-
-
-\section*{Q\&A}
-
-Answer questions posed in the lab assignment here.
-
-
-\section*{Results}
-
-In this section, put your simulation waveforms, results tables, pictures of hardware, and any other required items.
-
+In this experiment, we used the skills we had learned in the previous two labs to apply it to our 4 digit display. This display was able to show us BCD and hex conversions in one device. This device used many different converters that we had previously made to work together for the final product. 
 
 \section*{Code}
 
-Include all of the code you wrote or modified here.
+\Verilog[caption= mux2 code]{C:/Users/spencer_stinson1/Documents/GitHub/Lab08/Lab_08/Lab_08.srcs/sources_1/new/mux2.sv}
+\Verilog[caption= mux4 code]{C:/Users/spencer_stinson1/Documents/GitHub/Lab08/Lab_08/Lab_08.srcs/sources_1/new/mux4.sv}
+\Verilog[caption= an decoder code]{C:/Users/spencer_stinson1/Documents/GitHub/Lab08/Lab_08/Lab_08.srcs/sources_1/new/an_decoder.sv}
+\Verilog[caption= sseg4 code]{C:/Users/spencer_stinson1/Documents/GitHub/Lab08/Lab_08/Lab_08.srcs/sources_1/new/sseg4.sv}
+\Verilog[caption= sseg4 manual code]{C:/Users/spencer_stinson1/Documents/GitHub/Lab08/Lab_08/Lab_08.srcs/sources_1/new/sseg4_manual.sv}
 
+
+\section*{Results}
+\begin{figure}[ht]\centering 
+\includegraphics[width= 0.9\textwidth]{b1.png}
+\caption{c displayed on first digit}
+\label{fig: pic1}
+\end{figure}
+
+\begin{figure}[ht]\centering 
+	\includegraphics[width= 0.9\textwidth]{b2.png}
+	\caption{1 displayed on second digit}
+	\label{fig: pic2}
+\end{figure}
+
+\begin{figure}[ht]\centering 
+	\includegraphics[width= 0.9\textwidth]{b3.png}
+	\caption{1 displayed on third digit}
+	\label{fig: pic3}
+\end{figure}
+
+\begin{figure}[ht]\centering 
+	\includegraphics[width= 0.9\textwidth]{b4.png}
+	\caption{4 displayed on second digit}
+	\label{fig: pic4}
+\end{figure}
+
+\begin{figure}[ht]\centering 
+	\includegraphics[width= 0.9\textwidth]{b5.png}
+	\caption{0 displayed on first digit}
+	\label{fig: pic5}
+\end{figure}
+
+\begin{figure}[ht]\centering 
+	\includegraphics[width= 0.9\textwidth]{b6.png}
+	\caption{0 displayed on fourth digit}
+	\label{fig: pic6}
+\end{figure}
+
+\begin{figure}[ht]\centering 
+	\includegraphics[width= 0.9\textwidth]{b8.png}
+	\caption{1 displayed on fourth digit}
+	\label{fig: pic7}
+\end{figure}
+
+\begin{figure}[ht]\centering 
+	\includegraphics[width= 0.9\textwidth]{b9.png}
+	\caption{0 displayed on fourth digit}
+	\label{fig: pic8}
+\end{figure}
+
+\begin{figure}[ht]\centering 
+	\includegraphics[width= 0.9\textwidth]{b10.png}
+	\caption{- displayed on fourth digit}
+	\label{fig: pic9}
+\end{figure}
+
+\begin{figure}[ht]\centering 
+	\includegraphics[width= 0.9\textwidth]{b11.png}
+	\caption{c displayed on first digit}
+	\label{fig: pic10}
+\end{figure}
+
+\begin{figure}[ht]\centering 
+	\includegraphics[width= 0.9\textwidth]{ert.png}
+	\caption{ERTs}
+	\label{fig: ert}
+\end{figure}
 
 \end{document}
