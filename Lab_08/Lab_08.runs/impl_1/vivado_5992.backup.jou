@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Oct 21 15:23:45 2020
+# Process ID: 5992
+# Current directory: C:/Users/spencer_stinson1/Documents/GitHub/Lab08/Lab_08/Lab_08.runs/impl_1
+# Command line: vivado.exe -log sseg4_manual.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source sseg4_manual.tcl -notrace
+# Log file: C:/Users/spencer_stinson1/Documents/GitHub/Lab08/Lab_08/Lab_08.runs/impl_1/sseg4_manual.vdi
+# Journal file: C:/Users/spencer_stinson1/Documents/GitHub/Lab08/Lab_08/Lab_08.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source sseg4_manual.tcl -notrace

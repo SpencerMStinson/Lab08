@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/spencer_stinson1/Documents/GitHub/Lab08/Lab_08/Lab_08.runs/synth_1/sseg4.tcl"
+  variable script "C:/Users/spencer_stinson1/Documents/GitHub/Lab08/Lab_08/Lab_08.runs/synth_1/sseg4_manual.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,6 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -92,6 +94,8 @@ read_verilog -library xil_defaultlib -sv {
   C:/Users/spencer_stinson1/Documents/GitHub/Lab08/Lab_08/Lab_08.srcs/sources_1/new/mux2.sv
   C:/Users/spencer_stinson1/Documents/GitHub/Lab08/Lab_08/Lab_08.srcs/sources_1/new/mux4.sv
   C:/Users/spencer_stinson1/Documents/GitHub/Lab08/Lab_08/Lab_08.srcs/sources_1/new/sseg4.sv
+  C:/Users/spencer_stinson1/Documents/GitHub/Lab06A/Lab06_/Lab06_.srcs/sources_1/new/sseg_decoder.sv
+  C:/Users/spencer_stinson1/Documents/GitHub/Lab08/Lab_08/Lab_08.srcs/sources_1/new/sseg4_manual.sv
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -109,17 +113,17 @@ set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top sseg4 -part xc7a35tcpg236-1
+synth_design -top sseg4_manual -part xc7a35tcpg236-1
 OPTRACE "synth_design" END { }
 
 
 OPTRACE "write_checkpoint" START { CHECKPOINT }
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef sseg4.dcp
+write_checkpoint -force -noxdef sseg4_manual.dcp
 OPTRACE "write_checkpoint" END { }
 OPTRACE "synth reports" START { REPORT }
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file sseg4_utilization_synth.rpt -pb sseg4_utilization_synth.pb"
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file sseg4_manual_utilization_synth.rpt -pb sseg4_manual_utilization_synth.pb"
 OPTRACE "synth reports" END { }
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

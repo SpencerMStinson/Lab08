@@ -28,7 +28,7 @@ module sseg4_manual(
     );
     
     sseg4 s4(
-     .data({0, sw[11:0]}),
+     .data({4'b0000, sw[11:0]}),
      .hex_dec(sw[15]),
      .sign(sw[14]),
      .digit_sel(sw[13:12]),
